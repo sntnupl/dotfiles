@@ -12,7 +12,7 @@ Commands
 - leader + , (rename a tab)
 - alt+ arrow (navigate across panes within a tab)
 - shift+left/right (navigate across tabs)
-- leader v (divide new pane vertically)
-- leader h (divide new pane horizontally)
+- leader ctrl-v (divide new pane vertically)
+- leader ctrl-h (divide new pane horizontally)
 
 
