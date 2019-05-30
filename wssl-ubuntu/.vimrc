@@ -62,7 +62,9 @@ set expandtab       " tabs are spaces
 set shiftwidth=4    " make each indent 4 cols wide
 " }}}
 
-
+set visualbell
+" uncomment below to disable flashing
+" set t_vb=
 
 " UI Config {{{
 " ++++++++++ UI config ++++++++++
@@ -129,6 +131,7 @@ set foldmethod=syntax   " fold based on indent level
 "set foldlevel=1
 "set foldclose=all
 set foldnestmax=1
+let g:markdown_folding = 1   " turn on folding for markdown files
 "set modelines=1
 " }}}
 
