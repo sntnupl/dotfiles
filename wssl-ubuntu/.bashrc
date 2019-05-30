@@ -192,3 +192,9 @@ fi
 #================== fzf
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
+#========= colorize ls
+export LS_OPTIONS='-la --color=auto'
+eval "$(dircolors -b)"
+alias ls='ls $LS_OPTIONS'
+
+
