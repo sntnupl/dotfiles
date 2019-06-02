@@ -20,6 +20,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin '907th/vim-auto-save'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -65,6 +66,15 @@ set shiftwidth=4    " make each indent 4 cols wide
 set visualbell
 " uncomment below to disable flashing
 " set t_vb=
+
+" Auto Save {{{
+" https://vimawesome.com/plugin/vim-auto-save
+let g:auto_save = 1  " enable AutoSave on Vim startup
+" AutoSave will display on the status line on each auto-save by default.
+" You can silence this
+" let g:auto_save_silent = 1  " do not display the auto-save notification
+" }}}
+
 
 " UI Config {{{
 " ++++++++++ UI config ++++++++++
