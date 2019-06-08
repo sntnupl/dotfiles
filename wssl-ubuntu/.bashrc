@@ -159,6 +159,7 @@ alias ls='ls -l'
 alias gs='git status'
 alias ..='cd ..'
 alias npm='/usr/bin/npm'
+alias npmgp='npm list -g --depth 0'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -198,3 +199,4 @@ eval "$(dircolors -b)"
 alias ls='ls $LS_OPTIONS'
 
 
+export PATH="~/npm/bin:$PATH"
