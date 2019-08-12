@@ -157,9 +157,14 @@ alias l='ls -CF'
 alias c='clear'
 alias ls='ls -l'
 alias gs='git status'
+alias glp='git log -20 --pretty=format:"%h - %an, %ad : %s"'
 alias ..='cd ..'
 alias npm='/usr/bin/npm'
 alias npmgp='npm list -g --depth 0'
+alias gh='cd /mnt/c/dev/ws-gh'
+alias dotf='cd /mnt/c/dev/ws-gh/dotfiles'
+alias az203='cd /mnt/c/dev/ws-gh/az-203'
+alias kms='cd /mnt/c/dev/ws-gh/keepmysecrets'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
