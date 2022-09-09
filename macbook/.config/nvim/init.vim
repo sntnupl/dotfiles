@@ -11,6 +11,7 @@ Plug 'windwp/nvim-autopairs'
 Plug 'akinsho/toggleterm.nvim', {'tag' : 'v2.*'}
 Plug 'mhinz/vim-startify'
 Plug 'danilamihailov/beacon.nvim'
+Plug 'dhruvasagar/vim-table-mode'
 
 " cmp Plugins
 Plug 'hrsh7th/nvim-cmp'                               " The completion plugin
@@ -21,6 +22,7 @@ Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-nvim-lua'
 Plug 'nvim-lua/plenary.nvim'                          " reqd for crates
 Plug 'saecki/crates.nvim', { 'tag': 'v0.2.1' }        " rust crates
+Plug 'PasiBergman/cmp-nuget'                          " dotnet nuget packages
 
 " LSP
 Plug 'neovim/nvim-lspconfig'             " enable LSP
@@ -32,10 +34,16 @@ Plug 'rust-lang/rust.vim'
 Plug 'simrat39/rust-tools.nvim'          " rust tools using neovim's LSP
 " ensure to `brew install llvm` to install lldb-vscode, needed for debugging
 
+# CSharp
+Plug 'OmniSharp/omnisharp-vim'
+Plug 'dense-analysis/ale'
+
+
 " Snippets (for luasnip users)
 Plug 'L3MON4D3/LuaSnip'                   " snippet engine
 Plug 'saadparwaiz1/cmp_luasnip'           " snippet completions
 Plug 'rafamadriz/friendly-snippets'       " bunch of snippets to use
+Plug 'sirver/ultisnips'
 
 " Telescope
 " remember to `brew install ripgrep` for live_grep or grep_string to work
@@ -66,6 +74,7 @@ lua << EOF
 require("nvim-autopairs").setup {}
 require("user.lsp")
 require('crates').setup()
+require('cmp-nuget').setup({})
 EOF
 
 

@@ -110,6 +110,7 @@ cmp.setup({
                 buffer    = "[Buffer]",
                 path      = "[Path]",
                 crates    = "[Crates]",
+                nuget     = "[Nuget]",
             })[entry.source.name]
             return vim_item
         end,
@@ -124,6 +125,7 @@ cmp.setup({
         { name = "buffer" },
         { name = "path" },
         { name = "crates" },
+        { name = "nuget", keyword_length = 0 }
     },
     confirm_opts = {
         behavior = cmp.ConfirmBehavior.Replace,
