@@ -34,7 +34,7 @@ Plug 'rust-lang/rust.vim'
 Plug 'simrat39/rust-tools.nvim'          " rust tools using neovim's LSP
 " ensure to `brew install llvm` to install lldb-vscode, needed for debugging
 
-# CSharp
+" CSharp
 Plug 'OmniSharp/omnisharp-vim'
 Plug 'dense-analysis/ale'
 
@@ -43,7 +43,7 @@ Plug 'dense-analysis/ale'
 Plug 'L3MON4D3/LuaSnip'                   " snippet engine
 Plug 'saadparwaiz1/cmp_luasnip'           " snippet completions
 Plug 'rafamadriz/friendly-snippets'       " bunch of snippets to use
-Plug 'sirver/ultisnips'
+"Plug 'sirver/ultisnips'
 
 " Telescope
 " remember to `brew install ripgrep` for live_grep or grep_string to work
