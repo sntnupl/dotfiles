@@ -284,21 +284,25 @@ M.nvterm = {
 
   t = {
     -- toggle in terminal mode
-    ["<A-i>"] = {
+    -- mac needs these modifications: https://stackoverflow.com/a/15399297
+    -- ["<A-i>"] = {
+    ["ʼ"] = {
       function()
         require("nvterm.terminal").toggle "float"
       end,
       "toggle floating term",
     },
 
-    ["<A-h>"] = {
+    -- ["<A-h>"] = {
+    ["ˍ"] = {
       function()
         require("nvterm.terminal").toggle "horizontal"
       end,
       "toggle horizontal term",
     },
 
-    ["<A-v>"] = {
+    -- ["<A-v>"] = {
+    ["ˇ"] = {
       function()
         require("nvterm.terminal").toggle "vertical"
       end,
@@ -308,21 +312,25 @@ M.nvterm = {
 
   n = {
     -- toggle in normal mode
-    ["<A-i>"] = {
+    --["<A-i>"] = {
+    ["ʼ"] = {
       function()
         require("nvterm.terminal").toggle "float"
       end,
       "toggle floating term",
+      opts = { silent = true, noremap = true },
     },
 
-    ["<A-h>"] = {
+    -- ["<A-h>"] = {
+    ["ˍ"] = {
       function()
         require("nvterm.terminal").toggle "horizontal"
       end,
       "toggle horizontal term",
     },
 
-    ["<A-v>"] = {
+    -- ["<A-v>"] = {
+    ["ˇ"] = {
       function()
         require("nvterm.terminal").toggle "vertical"
       end,
