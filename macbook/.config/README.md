@@ -22,7 +22,8 @@ Install the following go packages:
 2. `go install mvdan.cc/gofumpt@latest`
 3. `go install github.com/segmentio/golines@latest`
 4. `go install github.com/go-delve/delve/cmd/dlv@latest`
-5. Quit & reopen neovim, run `TSInstall go` to install go grammer for Tree-Sitter.
+5. Quite nvim, open `~/.zshrc` and add the following lines: `export PATH=$HOME/go/bin:$PATH`
+6. Quit & reopen neovim, run `TSInstall go` to install go grammer for Tree-Sitter.
 
 **Chad Neovim References**   
 1. [The perfect Neovim setup for Go - YouTube](https://www.youtube.com/watch?v=i04sSQjd-qo)
