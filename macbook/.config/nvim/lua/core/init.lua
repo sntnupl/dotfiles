@@ -15,6 +15,10 @@ opt.showmode = false
 opt.clipboard = "unnamedplus"
 opt.cursorline = true
 
+-- folding
+opt.foldmethod = "expr"
+opt.foldexpr = "nvim_treesitter#foldexpr()"
+
 -- Indenting
 opt.expandtab = true
 opt.shiftwidth = 2
@@ -71,6 +75,13 @@ autocmd("FileType", {
   end,
 })
 
+-- vim.api.nvim_create_autocmd({"BufReadPost", "FileReadPost"}, {
+--   group = vim.api.nvim_create_augroup("OpenFolds", {}),
+--   callback = function ()
+--     vim.cmd.OpenFolds()
+--   end
+-- })
+
 -- reload some chadrc options on-save
 vim.api.nvim_create_autocmd("BufWritePost", {
   pattern = vim.tbl_map(
@@ -108,3 +119,4 @@ local new_cmd = vim.api.nvim_create_user_command
 new_cmd("NvChadUpdate", function()
   require "nvchad.update"()
 end, {})
+
