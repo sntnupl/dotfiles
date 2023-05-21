@@ -19,12 +19,14 @@ opt.cursorline = true
 opt.foldmethod = "expr"
 opt.foldexpr = "nvim_treesitter#foldexpr()"
 
+
 -- Indenting
-opt.expandtab = true
-opt.shiftwidth = 2
-opt.smartindent = true
-opt.tabstop = 2
-opt.softtabstop = 2
+-- https://stackoverflow.com/a/1878983
+opt.expandtab = true      -- tabs are spaces
+opt.shiftwidth = 4        -- make each indent 4 cols wide 
+opt.smartindent = true    -- 
+opt.tabstop = 4           -- n0. of visual spaces per TAB 
+opt.softtabstop = 4       -- no. of spaces in tab when editing 
 
 opt.fillchars = { eob = " " }
 opt.ignorecase = true
