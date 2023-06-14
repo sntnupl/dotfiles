@@ -19,6 +19,7 @@ opt.cursorline = true
 opt.foldmethod = "expr"
 opt.foldexpr = "nvim_treesitter#foldexpr()"
 
+opt.scrolloff = 5
 
 -- Indenting
 -- https://stackoverflow.com/a/1878983

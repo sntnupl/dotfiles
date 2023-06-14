@@ -7,7 +7,10 @@ fi
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=$HOME/bin:/usr/local/bin:/opt/homebrew/Cellar/llvm/14.0.6_1/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/opt/homebrew/Cellar/llvm/14.0.6_1/bin:$HOME/.dotnet/tools:$PATH
+export PATH=/opt/homebrew/opt/python@3.11/libexec/bin:$PATH
+export PATH=$HOME/go/bin:$PATH
+export PATH=$HOME/hugo/extended_0.113_0:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -116,8 +119,10 @@ alias gs='git status'
 alias glp='git log -20 --pretty=format:"%h - %an, %ad : %s"'
 alias ls='exa -lah'
 alias ls2='exa'
+alias tree='exa --tree'
 alias cat='bat'
 alias dev='cd ~/dev'
+alias code='cd ~/dev/code/'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
